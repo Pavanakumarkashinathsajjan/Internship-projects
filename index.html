@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="Stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,I'm <span>Pavanakumar</span><br>Student From India</h1>
+            <p>This is my personal portfolio website</p>
+        </div>
+    </div>
+</div>
+<!-- --------------------about----------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="background.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Since my early life i have learnt good manners ,good habbits,dicipline,obedience and etiquette from My teachers and parents and my hobbies are reading and learning new things.
+                    I have been very motivated to create the best possible future for myself.I want to be successful in my career and to go and live and work in abroad.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents avtive-tab" id="skills">
+                    <ul>
+                        <li><span>Mern stack Developer</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development </li>
+                        <li><span>Full Stack Developer</span><br>Building Android/ios apps </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>I have passed SSLC in oxford high school.</li>
+                        <li><span>2021</span><br>I have passed PUC in oxford PU college.</li>
+                        <li><span>2022</span><br>I have started engineering in NHCE.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="Work-list">
+            <div class="Work">
+            <img src="converters.png">
+            <div class="layer">
+                <h3>All converters website</h3>
+                <p>This website helps you to convert time, temperature, distance and currency.</p>
+                <a href="file:///C://Users//Pavanakumar%20k%20s//Desktop//wdt1//WDT//Code//home.html"><i class="fas fa-external-links-alt"></i></a>
+            </div>
+        </div>
+        <div class="Work">
+        <img src="portfolio.png">
+            <div class="layer">
+                <h3>Portfolio website</h3>
+                <p>I did this website for Building my resume and for learning some new concepts. </p>
+                <a href="#"><i class="fas fa-external-links-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -------------contact---------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>pavasajju14@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8904054035</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="Contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Pavanakumar<i class="fas fa.heart"></i> | 2023 All rights reserved.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
